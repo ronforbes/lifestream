@@ -1,5 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.container
+    h1.lead What's happening
+    form.form-horizontal
+      .input-append
+        input.input-xxlarge(type="text", placeholder="Say something...")
+        button.btn.btn-primary(type="submit") Submit

@@ -1,7 +1,18 @@
 doctype 5
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Lifestream
+    link(rel='stylesheet', href='/style/style.css')
+    link(rel='stylesheet', href='/style/bootstrap.min.css')
   body
+    header.navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        a.brand(href="#") Lifestream
+        ul.nav
+          li.active: a(href="#") Home
     block content
+    footer.navbar.navbar-fixed-bottom
+      .navbar-inner
+        a.brand(href="mailto:r@ronforbes.me") Made with love by Ron Forbes
+    script(src="http://code.jquery.com/jquery-latest.js")
+    script(src="/javascript/bootstrap.min.js")
