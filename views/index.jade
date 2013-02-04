@@ -5,5 +5,8 @@ block content
     h1.lead What's happening
     form.form-horizontal
       .input-append
-        input.input-xxlarge(type="text", placeholder="Say something...")
+        input.input-xxlarge(type="text", placeholder="Say something...", autofocus)
         button.btn.btn-primary(type="submit") Submit
+
+block script
+  script(src="/script/script.js")
